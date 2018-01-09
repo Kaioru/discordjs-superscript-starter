@@ -1,0 +1,3 @@
++ {^hasTag('hello')}
+- Hi!
+- Hello.
