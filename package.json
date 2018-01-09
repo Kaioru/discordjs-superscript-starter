@@ -1,0 +1,22 @@
+{
+  "name": "discordjs-superscript-starter",
+  "version": "1.0.0",
+  "description": "a starter project for discordjs and superscript",
+  "author": "Kaioru <keith@kaioru.co>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaioru/discordjs-superscript-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kaioru/discordjs-superscript-starter/issues"
+  },
+  "homepage": "https://github.com/Kaioru/discordjs-superscript-starter#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
