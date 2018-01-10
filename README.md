@@ -2,6 +2,8 @@
 a starter project for discord.js and superscript.
 
 ## Installation
+### 0. Prerequisites
+As superscript requires MongoDB, it is recommended that you install and start the MongoDB service before installing the starter project.
 ### 1. Clone the repository!
 ```
 git clone https://github.com/Kaioru/discordjs-superscript-starter.git && cd discordjs-superscript-starter
