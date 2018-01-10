@@ -4,9 +4,11 @@
   "description": "a starter project for discordjs and superscript",
   "author": "Kaioru <keith@kaioru.co>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/bot-discord.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "start": "node dist/bot-discord.js"
   },
   "repository": {
     "type": "git",
