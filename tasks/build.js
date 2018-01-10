@@ -26,13 +26,16 @@ module.exports = function (gulp, options, plugins) {
             .pipe(gulp.dest('dist'))
     });
 
-    gulp.task('build:babel', function () {
+    gulp.task('build:js', function () {
         gulp.src('app/**/*.js')
+            .pipe(plugins.sourcemaps.init())
             .pipe(plugins.babel({
                 presets: ['env']
             }))
+            .pipe(plugins.uglify())
+            .pipe(plugins.sourcemaps.write())
             .pipe(gulp.dest('dist'))
     });
 
-    gulp.task('build', ['build:babel', 'parse:data', 'parse:facts']);
+    gulp.task('build', ['build:js', 'parse:data', 'parse:facts']);
 }
