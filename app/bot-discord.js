@@ -10,7 +10,6 @@ if (!token) {
     console.log('Please set the BOT_TOKEN in the environment variables.');
 } else {
     glob(`${__dirname}/facts/**/*.{top,tbl}`, (err, files) => {
-        console.log(files)
         superscript.setup({
             factSystem: {
                 importData: files,
