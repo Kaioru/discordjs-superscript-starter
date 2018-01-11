@@ -1,6 +1,6 @@
 + {^hasTag('hello')} *~2
 - Hi!
-- Hello.
+- ^getHello()
 
 + i like ~random_food
 - I like <cap> too!
