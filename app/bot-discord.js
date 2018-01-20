@@ -11,6 +11,8 @@ if (!token) {
 } else {
     glob(`${__dirname}/facts/**/*.{top,tbl}`, (err, files) => {
         superscript.setup({
+            logPath: null,
+            mongoURI: process.env.MONGODB_URL || 'mongodb://localhost:27017/superscriptdb',
             factSystem: {
                 importData: files,
                 clean: true,
