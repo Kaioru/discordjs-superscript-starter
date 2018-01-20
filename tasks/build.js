@@ -7,7 +7,7 @@ module.exports = function (gulp, options, plugins) {
     require('dotenv').config()
     gulp.task('parse:data', function (callback) {
         glob(`${__dirname}/../app/facts/**/*.{top,tb}`, (err, files) => {
-            var process = sfacts.default.load(plugins.util.env.MONGODB_URL || 'mongodb://localhost:27017/parser', files, true, (err, factSystem) => {
+            var process = sfacts.default.load(plugins.util.env.MONGODB_URI || 'mongodb://localhost:27017/parser', files, true, (err, factSystem) => {
                 ssparser.default.parseDirectory(
                     'app/responses',
                     { factSystem },
