@@ -2,6 +2,9 @@ import path from 'path';
 import glob from 'glob';
 import discord from 'discord.js';
 import superscript from 'superscript';
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const client = new discord.Client();
 const token = process.env.BOT_TOKEN;
