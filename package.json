@@ -8,7 +8,8 @@
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
-    "start": "node dist/bot-discord.js"
+    "start": "node dist/bot-discord.js",
+    "postinstall": "gulp build"
   },
   "repository": {
     "type": "git",
